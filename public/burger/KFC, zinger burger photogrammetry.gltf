@@ -1,0 +1,287 @@
+{
+  "asset": {
+    "generator": "OpenSceneGraph 3.5.6",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.055921848863363266,
+        0.08851679414510727,
+        0.07130638509988785
+      ],
+      "min": [
+        -0.06917879730463028,
+        0.012972800061106682,
+        -0.043263599276542664
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 65532,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 190223,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 147775,
+      "bufferView": 1,
+      "byteOffset": 380448
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 56096,
+      "max": [
+        0.05620117485523224,
+        0.0881202444434166,
+        0.07169581204652786
+      ],
+      "min": [
+        -0.06917879730463028,
+        0.012972800061106682,
+        -0.043263599276542664
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 56096,
+      "bufferView": 2,
+      "byteOffset": 12
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1310640,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1310640,
+      "byteLength": 676000,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1986640,
+      "byteLength": 1121920,
+      "byteStride": 20,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "gltf_embedded_0.jpeg",
+      "mimeType": "image/jpeg",
+      "uri": "images/gltf_embedded_0.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "KFC, zinger burger photogrammetry.bin",
+      "byteLength": 3108560
+    }
+  ],
+  "materials": [
+    {
+      "name": "material_0",
+      "extras": {
+        "SKETCHFAB_reflection": 0.1
+      },
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        }
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "GeometryNode_5",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1
+          },
+          "mode": 5,
+          "material": 0,
+          "indices": 2
+        }
+      ]
+    },
+    {
+      "name": "GeometryNode_17",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "TEXCOORD_0": 5
+          },
+          "mode": 5,
+          "material": 0,
+          "indices": 3
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "root",
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "GLTF_SceneRootNode",
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "children": [
+        2
+      ]
+    },
+    {
+      "name": "_0",
+      "children": [
+        3
+      ]
+    },
+    {
+      "name": "Group_4",
+      "children": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "GeometryNode_5",
+      "extras": {
+        "userData": {
+          "textureIds": [
+            "texture_1775938289720_sn710c6xa"
+          ],
+          "attributes": 55,
+          "vertex_bits": 16,
+          "vertex_mode": 3,
+          "uv_0_mode": 0,
+          "uv_1_bits": 14,
+          "uv_1_mode": 3,
+          "epsilon": 0.25,
+          "nphi": 720,
+          "triangle_mode": 7,
+          "vertex_obits": 16,
+          "vtx_bbl_x": -0.0691788,
+          "vtx_bbl_y": 0.0129728,
+          "vtx_bbl_z": -0.0432636,
+          "vtx_h_x": 0.00000382641,
+          "vtx_h_y": 0.00000230549,
+          "vtx_h_z": 0.00000350839,
+          "uv_1_bbl_x": 0.0000669254,
+          "uv_1_bbl_y": 0.000200776,
+          "uv_1_h_x": 0.000122018,
+          "uv_1_h_y": 0.000122002
+        }
+      },
+      "mesh": 0
+    },
+    {
+      "name": "GeometryNode_17",
+      "extras": {
+        "userData": {
+          "textureIds": [
+            "texture_1775938289750_uialvta0h"
+          ],
+          "attributes": 55,
+          "vertex_bits": 16,
+          "vertex_mode": 3,
+          "uv_0_mode": 0,
+          "uv_1_bits": 14,
+          "uv_1_mode": 3,
+          "epsilon": 0.25,
+          "nphi": 720,
+          "triangle_mode": 7,
+          "vertex_obits": 16,
+          "vtx_bbl_x": -0.0691788,
+          "vtx_bbl_y": 0.0129728,
+          "vtx_bbl_z": -0.0432636,
+          "vtx_h_x": 0.00000382641,
+          "vtx_h_y": 0.00000230549,
+          "vtx_h_z": 0.00000350839,
+          "uv_1_bbl_x": 0.0000669254,
+          "uv_1_bbl_y": 0.000200776,
+          "uv_1_h_x": 0.000122018,
+          "uv_1_h_y": 0.000122002
+        }
+      },
+      "mesh": 1
+    },
+    {
+      "name": "Sketchfab_model",
+      "translation": [
+        0.004562142305076122,
+        -0.03874896094202995,
+        -0.14657077193260193
+      ],
+      "rotation": [
+        0.1898703087883182,
+        0.5917608979881683,
+        0.7459754555770739,
+        -0.23935104710397995
+      ],
+      "children": [
+        0
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_unlit"
+  ]
+}
