@@ -7,7 +7,6 @@ const InAppBrowserWarning = () => {
 
   useEffect(() => {
     const ua = navigator.userAgent || navigator.vendor || window.opera;
-    // Detects Instagram, Facebook, WhatsApp, Line, WeChat, etc.
     const rules = ['Instagram', 'FBAN', 'FBAV', 'WhatsApp', 'Line', 'MicroMessenger'];
     const trapped = rules.some(rule => ua.indexOf(rule) > -1);
     setIsInApp(trapped);
@@ -78,7 +77,6 @@ function App() {
   return (
     <div className="h-[100dvh] w-full bg-zinc-950 text-zinc-100 font-sans flex flex-col items-center justify-between p-4 sm:p-6 overflow-hidden selection:bg-zinc-700 antialiased relative">
       
-      {/* The Escape Hatch - Only shows if trapped in Instagram/WhatsApp */}
       <InAppBrowserWarning />
       
       <div className="w-full pt-2 flex justify-center shrink-0 z-10">
@@ -96,9 +94,12 @@ function App() {
           <model-viewer
             src="/burger-v1.glb"
             ios-src="/burger-v1.usdz"
-            poster="/burger-screenshot.svg" 
+            poster="/burger-screenshot.jpg" 
             ar
             ar-modes="webxr scene-viewer quick-look"
+            ar-scale="fixed"      /* CRITICAL: Stops shaking/sliding */
+            shadow-intensity="1.5"  /* PINS the burger to the floor */
+            bounds="tight"        /* Ensures floor calibration is accurate */
             camera-controls
             auto-rotate
             rotation-per-second="30deg"
@@ -118,7 +119,6 @@ function App() {
         </div>
 
         <div className="w-full text-center px-2 shrink-0">
-          
           <div ref={addToRefs} className="mb-4 cursor-default">
             <span className="text-[9px] font-semibold text-zinc-200 uppercase tracking-[0.25em] border border-zinc-700/60 bg-zinc-800/50 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-sm">
               Live Demo
