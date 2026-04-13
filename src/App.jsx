@@ -44,23 +44,23 @@ function App() {
   return (
     // Sophisticated background gradient
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 flex items-center justify-center p-4 sm:p-8 antialiased selection:bg-gray-900 selection:text-white">
-      
+
       {/* Main Glassmorphism Container */}
-      <div 
-        ref={containerRef} 
+      <div
+        ref={containerRef}
         className="bg-white/80 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white w-full max-w-5xl overflow-hidden flex flex-col md:flex-row opacity-0"
       >
-        
+
         {/* Left Side: 3D Model Viewer */}
         <div className="relative w-full md:w-1/2 h-80 md:h-[600px] bg-gradient-to-b from-transparent to-gray-50/50 flex items-center justify-center group">
-          
+
           {/* Subtle drag hint */}
           <div className="absolute top-6 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-white/60 backdrop-blur-md rounded-full text-xs font-medium text-gray-500 tracking-wide z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Drag to rotate
           </div>
 
           <model-viewer
-            src="/burger/KFC,%20zinger%20burger%20photogrammetry.gltf"
+            src="/burger-v1.glb"
             ar
             ar-modes="webxr scene-viewer quick-look"
             camera-controls
@@ -88,7 +88,7 @@ function App() {
 
         {/* Right Side: Typography & Details */}
         <div className="w-full md:w-1/2 p-8 md:p-14 flex flex-col justify-center border-t md:border-t-0 md:border-l border-gray-100 bg-white/40">
-          
+
           <div ref={addToRefs} className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider rounded-full">
               Signature Item
@@ -101,9 +101,9 @@ function App() {
           <h1 ref={addToRefs} className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-4">
             Classic Zinger <br /> Burger
           </h1>
-          
+
           <p ref={addToRefs} className="text-base md:text-lg text-gray-500 leading-relaxed mb-8">
-            A 100% chicken breast fillet, double hand-breaded and fried to a golden brown. Served with crisp lettuce and creamy mayo on a toasted sesame seed bun. 
+            A 100% chicken breast fillet, double hand-breaded and fried to a golden brown. Served with crisp lettuce and creamy mayo on a toasted sesame seed bun.
           </p>
 
           <div ref={addToRefs} className="flex items-end gap-4 mb-8">
@@ -117,7 +117,7 @@ function App() {
               Add to Cart
             </button>
           </div>
-          
+
         </div>
       </div>
     </div>
